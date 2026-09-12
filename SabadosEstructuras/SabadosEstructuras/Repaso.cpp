@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstring>
 #include "profesor.h"
+#include "listas.h"
 using namespace std;
 int main()
 {
@@ -56,8 +57,15 @@ int main()
 	//profesorEstructura.nombre = "Profe";
 	strcpy_s(profesorEstructura.nombre, "Profe");
 	profesorEstructura.salario = 1000.0f;
-	ingresarProfesor(&profesorEstructura);
-	mostrarProfesor(profesorEstructura);
+	//ingresarProfesor(&profesorEstructura);
+	//mostrarProfesor(profesorEstructura);
+
+	///Arreglo estatico de estructuras
+	/*int edadesArreglo[6];*/
+	//Memoria dinamica de estructuras
+	listaNodo* nodo1 = new listaNodo();
+	nodo1->dato = 10;
+	nodo1->siguiente = nullptr;//---
 
 	return 0;
 

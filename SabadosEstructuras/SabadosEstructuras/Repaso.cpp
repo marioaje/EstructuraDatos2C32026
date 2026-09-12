@@ -1,8 +1,9 @@
 
 
 #include <iostream>
+#include <cstring>
 #include "profesor.h"
-
+using namespace std;
 int main()
 {
 	std::cout << "Repaso arreglos!\n";
@@ -48,12 +49,15 @@ int main()
 	std::cout << "En donde estoy el numero de profesores yo era un 30: " << numeroDeProfesores << std::endl;
 	std::cout << "En donde estoy el numero de profesores DIRECCION MEMORIA: " << &numeroDeProfesores << std::endl;
 
-	
+	cout << "\n\n ";
 	Profesor profesorEstructura;
 	profesorEstructura.edad = 30;
-	profesorEstructura.id = 100;
-	profesorEstructura.nombre = 'Profe';
+	profesorEstructura.id = 1;
+	//profesorEstructura.nombre = "Profe";
+	strcpy_s(profesorEstructura.nombre, "Profe");
 	profesorEstructura.salario = 1000.0f;
+	ingresarProfesor(&profesorEstructura);
+	mostrarProfesor(profesorEstructura);
 
 	return 0;
 

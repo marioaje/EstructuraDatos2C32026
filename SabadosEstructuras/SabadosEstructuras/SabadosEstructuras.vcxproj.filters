@@ -27,6 +27,9 @@
     <ClCompile Include="profesorClase.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="Profesor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="estudiante.h">

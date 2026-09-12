@@ -49,7 +49,11 @@ int main()
 	std::cout << "En donde estoy el numero de profesores DIRECCION MEMORIA: " << &numeroDeProfesores << std::endl;
 
 	
-	
+	Profesor profesorEstructura;
+	profesorEstructura.edad = 30;
+	profesorEstructura.id = 100;
+	profesorEstructura.nombre = 'Profe';
+	profesorEstructura.salario = 1000.0f;
 
 	return 0;
 

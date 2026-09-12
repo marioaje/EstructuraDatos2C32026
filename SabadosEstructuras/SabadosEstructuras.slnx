@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="SabadosEstructuras/SabadosEstructuras.vcxproj" />
+  <Project Path="SabadosEstructuras/SabadosEstructuras.vcxproj" Id="34bc23da-1543-4ac2-8d41-293254f4993c" />
 </Solution>

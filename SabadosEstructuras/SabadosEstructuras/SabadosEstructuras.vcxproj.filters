@@ -30,6 +30,9 @@
     <ClCompile Include="Profesor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="funcionesRecursivas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="estudiante.h">

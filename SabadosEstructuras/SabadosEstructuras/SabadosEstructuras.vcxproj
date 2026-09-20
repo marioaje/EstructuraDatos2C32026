@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="estudiante.cpp" />
+    <ClCompile Include="funcionesRecursivas.cpp" />
     <ClCompile Include="Profesor.cpp" />
     <ClCompile Include="profesorClase.h" />
     <ClCompile Include="Repaso.cpp" />

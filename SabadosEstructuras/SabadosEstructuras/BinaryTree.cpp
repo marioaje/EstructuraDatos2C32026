@@ -67,6 +67,27 @@ void BinaryTree::preorden(Node* node) {
 }
 
 
+void BinaryTree::inordenAuxiliar() {
+	inorden(root);
+	std::cout << std::endl;
+}
+
+
+
+
+//Recorrido inorden izquierda,raiz, derecha
+
+
+void BinaryTree::inorden(Node* node) {
+	if (node != nullptr) {
+		inorden(node->left);//Mostrando la izquierda
+
+		std::cout << node->data << " "; //visitar la raiz
+		
+		inorden(node->right);//Mostrando la derecha
+	}
+}
+
 //
 ////Metodos auxiliares o recursivos de recorrido
 //// 

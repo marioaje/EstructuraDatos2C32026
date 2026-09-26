@@ -18,6 +18,11 @@ int main() {
 	tree.preordenAuxiliar();
 
 
+	std::cout << "Inorden: ";
+	tree.inordenAuxiliar();
+
+
+
 	std::cout << "BinaryTree";
 
 	return 0;

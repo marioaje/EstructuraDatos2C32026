@@ -46,7 +46,7 @@ class BinaryTree
 		//Metodos auxiliares o recursivos de recorrido
 		// 
 		void preordenAuxiliar();
-		void inorden();
+		void inordenAuxiliar();
 		void postorden();
 
 	//Hijos : Arbol - N->Lista(Analizadora)

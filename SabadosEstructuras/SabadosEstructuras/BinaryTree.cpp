@@ -13,9 +13,17 @@ BinaryTree::BinaryTree() {
 	root = nullptr;
 }
 //void destroyTree(Node* node);
-//BinaryTree::~BinaryTree() {
-//	destroyTree(root);
-//}
+BinaryTree::~BinaryTree() {
+	destroyTree(root);
+}
+
+void BinaryTree::destroyTree(Node* node) {
+	if (node != nullptr) {
+		destroyTree(node->left);
+		destroyTree(node->right);
+		delete node;
+	}
+}
 
 //Node* insert(Node* node, int val);
 
@@ -72,9 +80,6 @@ void BinaryTree::inordenAuxiliar() {
 	std::cout << std::endl;
 }
 
-
-
-
 //Recorrido inorden izquierda,raiz, derecha
 
 
@@ -88,12 +93,22 @@ void BinaryTree::inorden(Node* node) {
 	}
 }
 
-//
-////Metodos auxiliares o recursivos de recorrido
-//// 
-//void preorden(v);
-//void inorden(Node* node);
-//void postorden(Node* node);
-//
-//
 
+
+//Recorrido postorden izquierda, derecha, raiz
+void BinaryTree::postordenAuxiliar() {
+	postorden(root);
+	std::cout << std::endl;
+}
+
+
+
+void BinaryTree::postorden(Node* node) {
+	if (node != nullptr) {
+		postorden(node->left);//Mostrando la izquierda		
+
+		postorden(node->right);//Mostrando la derecha
+
+		std::cout << node->data << " "; //visitar la raiz
+	}
+}

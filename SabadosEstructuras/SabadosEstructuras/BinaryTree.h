@@ -26,7 +26,7 @@ class BinaryTree
 		Node* root;
 
 		Node* insert(Node* node, int val);
-	//	void destroyTree(Node* node);
+		void destroyTree(Node* node);
 		
 		//Metodos auxiliares o recursivos de recorrido
 		// 
@@ -39,7 +39,7 @@ class BinaryTree
 
 	public:
 		BinaryTree();//Constructor
-		//~BinaryTree();//destructor
+		~BinaryTree();//destructor
 		
 		void insert(int val);
 
@@ -47,7 +47,7 @@ class BinaryTree
 		// 
 		void preordenAuxiliar();
 		void inordenAuxiliar();
-		void postorden();
+		void postordenAuxiliar();
 
 	//Hijos : Arbol - N->Lista(Analizadora)
 //raíz : Arbol - N->entero(Analizadora)

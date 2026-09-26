@@ -42,6 +42,15 @@
     <ClCompile Include="BinaryTreeMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NaryTree.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NaryTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NaryTreeMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="estudiante.h">

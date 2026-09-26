@@ -144,6 +144,9 @@
     <ClCompile Include="BinaryTreeMain.cpp" />
     <ClCompile Include="estudiante.cpp" />
     <ClCompile Include="funcionesRecursivas.cpp" />
+    <ClCompile Include="NaryTree.cpp" />
+    <ClCompile Include="NaryTree.h" />
+    <ClCompile Include="NaryTreeMain.cpp" />
     <ClCompile Include="Profesor.cpp" />
     <ClCompile Include="profesorClase.h" />
     <ClCompile Include="Repaso.cpp" />

@@ -37,5 +37,8 @@ int main() {
 	tree.preordenAuxiliar();
 
 
+	std::cout << "Recorrido Postorden ";
+	tree.postordenAuxiliar();
+
 	return 0;
 }

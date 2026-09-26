@@ -61,3 +61,23 @@ void NaryTree::preorden(NaryNode* node) {
 
 	}
 }
+
+//postorden izquierda, derecha, raiz
+
+void NaryTree::postordenAuxiliar() {
+	postorden(root);
+	std::cout << std::endl;
+}
+
+
+void NaryTree::postorden(NaryNode* node) {
+	if (node != nullptr) {		
+
+		for (NaryNode* child : node->children) {
+			postorden(child);
+		}
+
+		std::cout << node->data << " "; //visitar la raiz
+
+	}
+}

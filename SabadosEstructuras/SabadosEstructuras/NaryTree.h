@@ -36,8 +36,9 @@ private:
 	//Metodos auxiliares o recursivos de recorrido
 	// 
 	void preorden(NaryNode* node);
+	void postorden(NaryNode* node);
 	/*void inorden(Node* node);
-	void postorden(Node* node);*/
+	*/
 
 
 
@@ -54,7 +55,7 @@ public:
 	// 
 	void preordenAuxiliar();
 	//void inordenAuxiliar();
-	//void postordenAuxiliar();
+	void postordenAuxiliar();
 };
 
 

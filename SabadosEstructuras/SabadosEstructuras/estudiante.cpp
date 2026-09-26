@@ -29,9 +29,9 @@ void mostrarEstudiante(struct Estudiante e) {
 }
 
 void actualizarEstudiante(struct Estudiante* e) {
-	printf("Actualizar información del estudiante (ID: %d):\n");
+	//printf("Actualizar información del estudiante (ID: %d):\n");
 	//scanf("%f", &e->promedio);
-	printf("Ingrese el promedio del estudiante: ");
+//	printf("Ingrese el promedio del estudiante: ");
 	cin >> e->promedio;
 }
 

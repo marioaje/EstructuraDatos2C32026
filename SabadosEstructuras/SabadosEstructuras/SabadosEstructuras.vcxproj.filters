@@ -51,6 +51,12 @@
     <ClCompile Include="NaryTreeMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AVL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AVLmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="estudiante.h">
@@ -60,6 +66,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="listas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

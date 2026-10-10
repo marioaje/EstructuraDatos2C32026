@@ -105,7 +105,62 @@ void ArbolPlus::insert(int valor) {
 
 }
 
+void ArbolPlus::mostrarArbol() {
 
+	if (root == nullptr){
+		std::cout << "El árbol está vacío." << std::endl;
+		return;
+	}
+
+
+	NodeBPplus* actual = root;
+
+
+	//Buscar la hoja que este mas a la izquierda
+	while (!actual->esHoja) {
+		actual = actual->hijos[0];
+	}
+
+	std::cout << "Hoja: ";
+
+
+	while (actual != nullptr) {
+		std::cout << "[ ";
+		for (int i = 0; i < actual->cantidad; i++)
+		{
+			std::cout << actual->claves[i];
+
+			if (i < actual->cantidad - 1)
+			{
+				std::cout << " | ";
+			}
+		}
+
+
+		std::cout << " ]";
+
+
+		actual = actual->siguiente;
+		if (actual != nullptr)	 {
+			std::cout << " -> ";
+		}
+
+		std::cout << std::endl;
+
+		/*actual = actual->hijos[0];*/
+	}
+
+	//if (root->esHoja) {
+	//	std::cout << "El árbol tiene datos en la raíz." << std::endl;
+	//	return;
+	//}
+	/*else {
+		std::cout << "El arbol tiene datos." << std::endl;
+		return;
+	}*/
+	// Implementación para mostrar el árbol
+	// Puedes recorrer el árbol y mostrar los valores de las claves
+}
 
 
 /*

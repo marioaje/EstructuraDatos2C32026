@@ -9,6 +9,8 @@ int main() {
 	tree.insert(10);
 	tree.insert(20);
 	tree.insert(30);
+	tree.mostrarArbol();
+
 	//tree.insert(40);
 	//tree.insert(50);
 	

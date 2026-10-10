@@ -139,6 +139,9 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="arbolplus.cpp" />
+    <ClCompile Include="arbolplus.h" />
+    <ClCompile Include="arbolplusmain.cpp" />
     <ClCompile Include="AVL.cpp" />
     <ClCompile Include="AVLmain.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

@@ -37,6 +37,12 @@ void ArbolPlus::insertEnHoja(NodeBPplus* nodeHoja, int val) {
 
 		i--;
 	}
+
+
+	nodeHoja->claves[i + 1] = val;
+	nodeHoja->cantidad++;
+
+
 }
 
 

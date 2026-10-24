@@ -142,6 +142,7 @@
     <ClCompile Include="arbolplus.cpp" />
     <ClCompile Include="arbolplus.h" />
     <ClCompile Include="arbolplusmain.cpp" />
+    <ClCompile Include="arbolrojonegro.cpp" />
     <ClCompile Include="AVL.cpp" />
     <ClCompile Include="AVLmain.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
@@ -158,6 +159,7 @@
     <ClCompile Include="SabadosEstructuras.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="arbolrojonegro.h" />
     <ClInclude Include="avl.h" />
     <ClInclude Include="estudiante.h" />
     <ClInclude Include="listas.h" />

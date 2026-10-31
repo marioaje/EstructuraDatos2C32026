@@ -21,8 +21,8 @@ int main() {
 	//tree.insert(100);
 	//tree.insert(110);
 	//tree.insert(120);
-
-	//tree.mostrarArbol();
+	
+	tree.mostrarArbol();
 
 	
 

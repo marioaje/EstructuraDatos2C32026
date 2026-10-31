@@ -221,3 +221,28 @@ void ArbolRojoNegro::corregirInsert(NodeRN* nodo) {
 
 
  }
+
+
+void ArbolRojoNegro::mostraNodo(NodeRN* nodo, int nivel) {
+
+    if (nodo == nullptr) {
+        return;
+    }
+
+    for (int i = 0; i < nivel; i++)
+    {
+        std::cout << "    ";
+    }
+
+    std::cout << nodo->valor << (nodo->rojo ? "(R)" : "(N)") << std::endl;
+    mostraNodo(nodo->izquierda, nivel + 1);
+    mostraNodo(nodo->derecha, nivel + 1);
+}
+
+void ArbolRojoNegro::mostrarArbol() {
+    if (root == nullptr) {
+        std::cout << "Arbol esta sin datos\n";
+        return;
+    }
+    mostraNodo(root, 0);
+}

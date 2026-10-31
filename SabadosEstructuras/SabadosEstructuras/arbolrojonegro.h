@@ -21,6 +21,7 @@ public:
 	ArbolRojoNegro& operator=(const ArbolRojoNegro&) = delete;
 
 	void insert(int valor);
+	
 	void mostrarArbol();
 
 private:
@@ -30,8 +31,8 @@ private:
 
 	void rotarIzquierda(NodeRN* nodo);
 	void rotarDerecha(NodeRN* nodo);
-
-	void corregirNodo(NodeRN* nodo, int valor);
+	void corregirInsert(NodeRN* nodo);
+	/*void corregirNodo(NodeRN* nodo, int valor);*/
 
 	void mostraNodo(NodeRN* nodo, int nivel);
 

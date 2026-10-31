@@ -142,6 +142,7 @@
     <ClCompile Include="arbolplus.cpp" />
     <ClCompile Include="arbolplus.h" />
     <ClCompile Include="arbolplusmain.cpp" />
+    <ClCompile Include="arbolrnmain.cpp" />
     <ClCompile Include="arbolrojonegro.cpp" />
     <ClCompile Include="AVL.cpp" />
     <ClCompile Include="AVLmain.cpp" />

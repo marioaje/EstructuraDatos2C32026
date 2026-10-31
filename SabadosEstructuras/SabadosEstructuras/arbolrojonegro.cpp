@@ -106,11 +106,11 @@ void ArbolRojoNegro::insert(int valor) {
 
     NodeRN* padre = nullptr;
 
-    //Buscar
+    //Buscar donde insertar
     while (actual != nullptr) {
         padre = actual;
 
-        if (valor < actual -> valor)
+        if (valor < actual->valor)
         {
             actual = actual->izquierda;
         }
@@ -127,24 +127,97 @@ void ArbolRojoNegro::insert(int valor) {
 
     }
 
-    nuevo-> padre = padre;
+    nuevo->padre = padre;
 
     if (padre == nullptr) {
         root = nuevo;
 
     }
 
-    if (valor < padre->valor)
+    else if (valor < padre->valor)
     {
         padre->izquierda = nuevo;
     }
 
-    else if (valor > actual->valor)
+    else 
     {
         padre->derecha = nuevo;
     }
 
 
-
+    corregirInsert(nuevo);
 
 }
+
+//Corrige colores y rota desp
+void ArbolRojoNegro::corregirInsert(NodeRN* nodo) {
+
+    while (nodo != root && nodo->padre != nullptr && nodo->padre->rojo) {
+
+        NodeRN* padre = nodo->padre;
+        NodeRN* abuelo = padre->padre;
+
+        if (abuelo == nullptr) {
+            break;
+        }
+
+        //El padre se encuentra en datos del abuelo
+        if (padre == abuelo->izquierda) {
+            NodeRN* tio = abuelo->derecha;
+
+            //Caso cuando el tio se rojo
+            if (tio != nullptr && tio->rojo) {
+                padre->rojo = false;
+                tio->rojo = false;
+                abuelo->rojo = true;
+                nodo = abuelo;
+            }
+            else {
+                //Caso de izquierda a derecha
+                if (nodo == padre->derecha) {
+                    nodo = padre;
+                    rotarIzquierda(nodo);
+                }
+
+                // izquierda izquierda
+                // 
+                nodo->padre->rojo = false;
+                nodo->padre->padre->rojo = true;
+                rotarDerecha(nodo->padre->padre);
+            }
+        }
+        else {
+            //caso donde son iguales el padre al lado derecho
+
+            NodeRN* tio = abuelo->izquierda;
+
+            if (tio != nullptr && tio->rojo) {
+                padre->rojo = false;
+                tio->rojo = false;
+                abuelo->rojo = true;
+                nodo = abuelo;
+            }
+
+            else {
+                //Caso de derecha a izquierda
+                if (nodo == padre->izquierda) {
+                    nodo = padre;
+                    rotarDerecha(nodo);
+                }
+
+                // derecha derecha
+                // 
+                nodo->padre->rojo = false;
+                nodo->padre->padre->rojo = true;
+                rotarIzquierda(nodo->padre->padre);
+            }
+
+        }
+
+
+    }
+
+    root->rojo = false;
+
+
+ }

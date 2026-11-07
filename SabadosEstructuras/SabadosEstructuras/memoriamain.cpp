@@ -1,11 +1,13 @@
 #include <iostream>
 #include <cstdlib> //Es la administración de memoria dinámica
 
-
+//Ejemplo de memoria dinámica en C++ ( Malloc y Free)
 using namespace std;	
 
 int main() {
 
+
+	cout << "Ejemplo de memoria dinamica en C++ ( Malloc y Free)" << endl;
 	int cantidades;
 	int* datos;
 
@@ -22,6 +24,11 @@ int main() {
 
 	//Mostrar memoria tamano en bytes
 	cout << "Tamano de memoria reservada: " << sizeof(int) << "bytes" << endl;
+
+	for (int i = 0; i < cantidades; i++)
+	{
+		cout << "datos [" << i << "] valor: " << datos[i] << " direccion: " << &datos << endl;
+	}
 
 
 	if (datos == nullptr) {

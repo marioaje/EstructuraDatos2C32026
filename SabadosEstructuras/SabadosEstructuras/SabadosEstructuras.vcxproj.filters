@@ -75,6 +75,9 @@
     <ClCompile Include="memoriamain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="memoriamaincall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="estudiante.h">

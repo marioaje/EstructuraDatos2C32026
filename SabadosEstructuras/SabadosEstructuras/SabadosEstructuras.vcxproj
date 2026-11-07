@@ -152,6 +152,7 @@
     <ClCompile Include="estudiante.cpp" />
     <ClCompile Include="funcionesRecursivas.cpp" />
     <ClCompile Include="memoriamain.cpp" />
+    <ClCompile Include="memoriamaincall.cpp" />
     <ClCompile Include="NaryTree.cpp" />
     <ClCompile Include="NaryTree.h" />
     <ClCompile Include="NaryTreeMain.cpp" />

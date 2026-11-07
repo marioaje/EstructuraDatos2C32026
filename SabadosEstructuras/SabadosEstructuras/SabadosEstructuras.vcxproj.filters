@@ -69,6 +69,12 @@
     <ClCompile Include="arbolrojonegro.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="arbolrnmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memoriamain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="estudiante.h">

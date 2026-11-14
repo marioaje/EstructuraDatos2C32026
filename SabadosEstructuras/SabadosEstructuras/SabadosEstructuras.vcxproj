@@ -162,6 +162,7 @@
     <ClCompile Include="profesorClase.h" />
     <ClCompile Include="Repaso.cpp" />
     <ClCompile Include="SabadosEstructuras.cpp" />
+    <ClCompile Include="semaforos.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arbolrojonegro.h" />

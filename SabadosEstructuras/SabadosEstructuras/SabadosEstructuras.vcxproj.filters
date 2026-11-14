@@ -81,6 +81,9 @@
     <ClCompile Include="hilos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="estudiante.h">

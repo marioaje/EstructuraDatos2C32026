@@ -154,6 +154,7 @@
     <ClCompile Include="hilos.cpp" />
     <ClCompile Include="memoriamain.cpp" />
     <ClCompile Include="memoriamaincall.cpp" />
+    <ClCompile Include="mutex.cpp" />
     <ClCompile Include="NaryTree.cpp" />
     <ClCompile Include="NaryTree.h" />
     <ClCompile Include="NaryTreeMain.cpp" />

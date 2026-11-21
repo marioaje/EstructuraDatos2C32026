@@ -139,6 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="arbolhuffman.cpp" />
     <ClCompile Include="arbolplus.cpp" />
     <ClCompile Include="arbolplus.h" />
     <ClCompile Include="arbolplusmain.cpp" />

@@ -141,6 +141,10 @@ public:
 		return false;
 	}
 
+	void eliminar(int clave) {
+
+	}
+
 };
 
 int main() {

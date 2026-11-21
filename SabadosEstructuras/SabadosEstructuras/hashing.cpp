@@ -50,8 +50,8 @@ private :
 
 		cout << "Rehashing automatico\n";
 
-		cout << "Capaciadad Anterior: " << capacidadanterior << endl;
-		cout << "Capaciadad nueva: " << cantidad << endl;
+		cout << "Capacidad Anterior: " << capacidadanterior << endl;
+		cout << "Capacidad nueva: " << cantidad << endl;
 
 		for (int i = 0; i < capacidadanterior; i++)
 		{
@@ -117,8 +117,8 @@ public:
 		}
 
 
-		cout << "Capaciadad de elementos: " << cantidad << endl;
-		cout << "Capaciadad: " << cantidad << endl;
+		cout << "Capacidad de elementos: " << cantidad << endl;
+		cout << "Capacidad: " << cantidad << endl;
 		cout << "*** El valor de carga: " << factorCarga() * 100 << "%" << endl;
 
 		/*for (int i = 0; i < capacidadanterior; i++)
@@ -142,6 +142,19 @@ public:
 	}
 
 	void eliminar(int clave) {
+		int indice = funsionHashing(clave);
+
+		for (auto itemporal = tabla[indice].begin(); itemporal != tabla[indice].end(); itemporal++) {
+			if (*itemporal == clave) {
+				tabla[indice].erase(itemporal);
+
+				cantidad--;
+				cout << "Clave: " << clave << " ,eliminada \n";
+				return;
+			}
+		}
+
+		cout << "La Clave: " << clave << " ,no existe \n";
 
 	}
 
@@ -154,10 +167,13 @@ int main() {
 	hash.insertar(21);
 	hash.insertar(32);
 	hash.mostrar();
+	hash.eliminar(220);
 	if (hash.buscar(10)) 
 		cout << "*** Valor encontrado: 10" << endl;	
 	else
 		cout << "*** Valor encontrado: 10" << endl;
+
+
 
 
 	return 0;

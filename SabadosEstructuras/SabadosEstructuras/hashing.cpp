@@ -74,4 +74,69 @@ public:
 		tabla.resize(capacidad);
 	}
 
+	//Insertar elemenots
+	void insertar(int clave) {
+
+		int indice = funsionHashing(clave);
+
+
+		//Evitar la duplicidad
+		for (int valor: tabla[indice])
+		{
+			if (valor == clave) {
+				cout << "*** El valor esta duplicado: " << clave << endl;
+				return;
+			}
+		}
+
+
+		tabla[indice].push_back(clave);
+
+		cantidad++;
+
+		cout << "*** El valor esta insertado: " << clave << " ,inidice: " << indice << endl;
+
+		cout << "*** El valor de carga: " << factorCarga()*100 << "%" << endl;
+
+		if (factorCarga() > FACTORMAXIMOCARGA) {
+			rehash();
+		}
+
+	}
+
+	void mostrar() {
+		cout << "*** Mostrar Hashing dinamico: " << endl;
+		for (int i = 0; i < capacidad; i++)
+		{
+			cout << "[" << i << "], ->";
+			for (int clave : tabla[i]) {
+				cout << clave << " ->";
+			}
+			cout << "Vacio\n";
+
+		}
+
+
+		cout << "Capaciadad de elementos: " << cantidad << endl;
+		cout << "Capaciadad: " << cantidad << endl;
+		cout << "*** El valor de carga: " << factorCarga() * 100 << "%" << endl;
+
+		/*for (int i = 0; i < capacidadanterior; i++)
+		{
+			for (int clave : tablaAnterior[i]) {
+				insertarSinRehash(clave);
+			}
+		}*/
+	}
+
 };
+
+int main() {
+	TablaDinamica hash(5);
+	cout << "*** Hashing dinamico: " << endl;
+	hash.insertar(10);
+	hash.insertar(21);
+	hash.insertar(32);
+	hash.mostrar();
+	return 0;
+}

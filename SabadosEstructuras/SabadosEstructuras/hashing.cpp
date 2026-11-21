@@ -129,6 +129,12 @@ public:
 		}*/
 	}
 
+	bool buscar(int clave) {
+
+
+		return false;
+	}
+
 };
 
 int main() {

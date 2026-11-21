@@ -130,7 +130,13 @@ public:
 	}
 
 	bool buscar(int clave) {
+		int indice = funsionHashing(clave);
 
+		for (int valor : tabla[indice]) {
+			if (valor == clave) {
+				return true;
+			}
+		}
 
 		return false;
 	}
@@ -144,5 +150,11 @@ int main() {
 	hash.insertar(21);
 	hash.insertar(32);
 	hash.mostrar();
+	if (hash.buscar(10)) 
+		cout << "*** Valor encontrado: 10" << endl;	
+	else
+		cout << "*** Valor encontrado: 10" << endl;
+
+
 	return 0;
 }
